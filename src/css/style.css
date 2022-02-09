@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+.pattern {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+
+    background-color: #e5e5f7;
+    opacity: 0.1;
+    background-image: radial-gradient(circle at center center, #1D824C, #e5e5f7), repeating-radial-gradient(circle at center center, #1D824C, #1D824C, 6px, transparent 12px, transparent 6px);
+    background-blend-mode: multiply;
+}
+
+.sep {
+    padding: 20px 40px 40px 40px;
+}
+
+.main {
+    background: #fff;
+    max-width: 750px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px 40px 40px 40px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 20.0pt;
+    margin-right: 0in;
+    margin-bottom: 10.0pt;
+    margin-left: 0in;
+    font-size: 15px;
+    color: #262626;
+}
+
+h3 {
+    margin: 0in;
+    font-size: 10px;
+    color: #595959;
+}
+
+.section {
+    font-size: 14px;
+}
+
+.item {
+    margin-top: 0in;
+    margin-right: 0in;
+    margin-bottom: 2.0pt;
+    margin-left: 0in;
+    font-size: 15px;
+    color: #1D824C;
+}
+
+.item-title {
+    color: #595959;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.item-content {
+    margin: 0in;
+    color: #595959;
+    font-size: 13px;
+}
+
+td {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-image: initial;
+    padding: 0in 0in 0in 0.4in;
+    vertical-align: top;
+}
+
+.td-item {
+    width: 467.75pt;
+    border-left: 2.25pt dotted rgb(191, 191, 191);
+}
+
+.fs {
+    font-size: 13px;
+}
+
+.fg {
+    font-size: 47px;
+}
+
+.fgm {
+    font-size: 37px;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    margin-bottom: 0in;
+    list-style-type: square;
+}
+
+.pdt {
+    padding-top: 20px;
+}
+
+.center {
+    text-align: center;
+    margin: 0in;
+}
+
+li {
+    margin: 0in;
+    font-size: 13px;
+    color: #595959;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+}
+
+.profile {
+    width: 451.3pt;
+    padding: 0in 0in 0in 0in;
+    color: #595959;
+}
+
+/* CUSTOM SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1d824c29;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1d824c77;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1d824c44;
+}
+
+@media print {
+    body, .main * {
+        margin: none;
+    }
+
+
+    .sep, .pattern {
+        display: none;
+    }
+
+    .main {
+        border: none;
+        box-shadow: none;
+    }
+}
